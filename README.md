@@ -48,7 +48,7 @@ A complete **English guide** for setting up the **Phi plugin** on **TRSS-Yunzai*
 
 We will use Chocolatey for installing Node
 
-Open Power Shell and paste these commands one by one.
+Open Power Shell as administrator and paste these commands one by one.
 ```
 # Download and install Chocolatey:
 powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
@@ -57,16 +57,26 @@ powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
 # Download and install Node.js:
 choco install nodejs --version="24.7.0"
 ``` 
+Close powershell ; open command prompt and do the following one by one:
+Verify the Node.js version:
 ```
-# Verify the Node.js version:
 node -v # Should print "vx.x.x".
 ```
+Download and install pnpm:
 ```
-# Download and install pnpm:
-corepack enable pnpm```
+npm install -g pnpm
 ```
 ```
 # Verify pnpm version:
 pnpm -v
 ```
 2. Install [MSYS2](https://www.msys2.org/)
+
+> [!TIP]
+>+For installing check for correct version, for Intel based PCs use x86-64 version otherwise for Apple and Qualcomm based PCs use ARM version under windows enviroment.
+
++After Installation open MSYS2 UCRT64, run the following command
+
+```
+pacman -S mingw-w64-ucrt-x86_64-gcc base-devel git cmake
+```
