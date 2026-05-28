@@ -70,7 +70,6 @@ Verify the Node.js version:
 ```
 node -v
 ```
-```
 Verify pnpm version:
 ```
 pnpm -v
