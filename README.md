@@ -3,11 +3,8 @@
 A complete **English guide** for setting up the **Phi plugin** on **TRSS-Yunzai** with Discord bot integration and TapTap account binding.
 
 > [!WARNING]
-<<<<<<< HEAD
 > Under construction ! Will be ready in a week or two .
-=======
 > Under construction !
->>>>>>> 11c4d6b26d0715a023d8952d5c343493991eb157
 
 
 ## What this guide is for ?
@@ -33,11 +30,8 @@ A complete **English guide** for setting up the **Phi plugin** on **TRSS-Yunzai*
 + TapTap Global Account (for phigrOS binding)
 
 > [!CAUTION]
-<<<<<<< HEAD
 > Any VM is recommended while using a 3rd paty code.
-=======
 > Any VM is recommended while using a 3rd party code.
->>>>>>> 11c4d6b26d0715a023d8952d5c343493991eb157
 >
 > [Oracle *Virtual Box* Download Page](https://www.oracle.com/in/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
 
@@ -56,11 +50,8 @@ A complete **English guide** for setting up the **Phi plugin** on **TRSS-Yunzai*
 
 We will use Chocolatey for installing Node
 
-<<<<<<< HEAD
 Open Power Shell as administrator and paste these commands one by one.
-=======
 Open Power Shell and paste these commands one by one.
->>>>>>> 11c4d6b26d0715a023d8952d5c343493991eb157
 ```
 # Download and install Chocolatey:
 powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
@@ -69,7 +60,7 @@ powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
 # Download and install Node.js:
 choco install nodejs --version="24.7.0"
 ``` 
-<<<<<<< HEAD
+
 Close powershell ; open command prompt and do the following one by one:
 Verify the Node.js version:
 ```
@@ -78,22 +69,20 @@ node -v # Should print "vx.x.x".
 Download and install pnpm:
 ```
 npm install -g pnpm
-=======
 ```
-# Verify the Node.js version:
+Verify the Node.js version:
 node -v # Should print "vx.x.x".
 ```
 ```
-# Download and install pnpm:
-corepack enable pnpm
->>>>>>> 11c4d6b26d0715a023d8952d5c343493991eb157
+Download and install pnpm:
 ```
+npm -g install pnpm
 ```
-# Verify pnpm version:
+Verify pnpm version:
+```
 pnpm -v
 ```
 2. Install [MSYS2](https://www.msys2.org/)
-<<<<<<< HEAD
 
 > [!TIP]
 >+For installing check for correct version, for Intel based PCs use x86-64 version otherwise for Apple and Qualcomm based PCs use ARM version under windows enviroment.
@@ -103,5 +92,3 @@ pnpm -v
 ```
 pacman -S mingw-w64-ucrt-x86_64-gcc base-devel git cmake
 ```
-=======
->>>>>>> 11c4d6b26d0715a023d8952d5c343493991eb157
